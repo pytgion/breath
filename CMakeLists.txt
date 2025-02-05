@@ -4,7 +4,7 @@ project(breath)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
-
+cmake_policy(SET CMP0072 NEW)
 find_package(OpenGL REQUIRED)
 
 # Compiler flags
@@ -18,7 +18,7 @@ set(CMAKE_CXX_FLAGS_DEBUG "-g -O0")
 set(CMAKE_CXX_FLAGS_RELEASE "-O3 -DNDEBUG")
 
 # Source files
-file(GLOB SRC_FILES src/*.cpp src/*.h src/*.cc)
+file(GLOB SRC_FILES src/*.cpp src/*.h src/*.cc src/Core/*.cc src/Core/*.h)
 
 add_executable(breath ${SRC_FILES} src/glad.c)
 
