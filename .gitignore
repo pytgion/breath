@@ -1,0 +1,48 @@
+# CMake-generated files
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+
+# Build directories
+/build/
+out/
+bin/
+obj/
+Debug/
+Release/
+
+# Compiled binaries and libraries
+*.exe
+*.out
+*.a
+*.o
+*.so
+*.dylib
+*.dll
+
+# Editor/IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+*.DS_Store
+
+# Logs and temp files
+*.log
+*.tmp
+
+# Ignore third-party build artifacts (but keep source)
+thirdparty/*/build/
+thirdparty/*/bin/
+thirdparty/*/CMakeFiles/
+thirdparty/*/Makefile
+thirdparty/*/cmake_install.cmake
+
+# Ignore Glad/Assimp built artifacts, but keep their source
+thirdparty/assimp/bin/
+thirdparty/assimp/lib/
+thirdparty/glad/bin/
+thirdparty/glad/lib/
+
